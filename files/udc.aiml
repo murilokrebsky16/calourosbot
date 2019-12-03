@@ -92,4 +92,34 @@
     </template>
 </category>
 
+<category>
+    <pattern>BANDECO</pattern>
+    <template>
+        <button>
+            <text>O bandejÃ£o se localiza no centro da Universidade, prÃ³ximo ao Banco do Brasil, se vocÃª clicar aqui em baixo vai poder ver uma foto dele :)<break></break></text>
+            <url>...</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>PORTARIAS</pattern>
+    <template>
+        <button>
+            <text>A USP possui 4 portarias, conhecidas como:<break></break>SaÃ­da/Entrada da MatemÃ¡tica;<break></break>SaÃ­da/Entrada da FÃ­sica;<break></break>SaÃ­da/Entrada da Arquitetura;<break></break>SaÃ­da/Entrada da ProduÃ§Ã£o<break></break>No link abaixo vocÃª pode ver fotos de cada uma delas</text>
+            <url>...</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>CEFER</pattern>
+    <template>
+        <button>
+            <text>O CEFER fica localizado prÃ³ximo ao IQSC (Instituto de QuÃ­mica de SÃ£o Carlos) descendo o bandejÃ£o. Em baixo vocÃª encontra uma foto dele :)<break></break></text>
+            <url>.....</url>
+        </button>
+    </template>
+</category>
+
 </aiml>
