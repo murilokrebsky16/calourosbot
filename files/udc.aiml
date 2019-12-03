@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+    <pattern><set>iniciacao</set></pattern>
+    <template>
+        <random>
+             <li>OlÃ¡ Humano !</li>
+             <li>Eai humano !</li>
+             <li>Oi :)</li>
+         </random>
+         Meu nome Ã© <bot name="nome"/> <break></break>
+         Sou o chatbot criado pelo grupo Sintaxe, e estou aqui para te ajudar na sua chegada Ã  Universidade :)<break></break>
+        Eu posso te auxiliar em uma dessas categorias:<break></break><split></split>
+        LocalizaÃ§Ã£o;<break></break>
+        Burocracria;<break></break>
+        Sistemas;<break></break>
+        ServiÃ§os.<break></break>
+        Qual dessas opÃ§Ãµes gostaria de saber ?
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>Qual dessas opÃ§Ãµes gostaria de saber ?</that>
+    <template>
+        <think><set name = "resp1"><star/></set></think>
+        <condition name="resp1">
+            <li value = "LocalizaÃ§Ã£o"> SÃ³ um momento ... <delay>2</delay><srai>LOCALIZACAO</srai></li>
+            <li value = "Burocracia"> SÃ³ um momento ... <delay>2</delay><srai>BUROCRACIA</srai></li>
+            <li value = "Sistemas"> SÃ³ um momento ... <delay>2</delay><srai>SISTEMAS</srai></li>
+            <li value = "ServiÃ§os"> SÃ³ um momento ... <delay>2</delay><srai>SERVIÃOS</srai></li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>LOCALIZACAO</pattern>
+    <template>Ok ! <break></break>
+    O que vocÃª precisa saber ?<break></break><split></split>
+    LocalizaÃ§Ã£o de salas;<break></break>
+    LocalizaÃ§Ã£o de blocos;<break></break>
+    LocalizaÃ§Ã£o de outros lugares;<break></break>
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>O que vocÃª precisa saber ?</that>
+    <template>
+         <think><set name = "resp2"><star/></set></think>
+         <condition name="resp2">
+            <li value = "* salas"> SÃ³ um momento ... <delay>2</delay><srai>SALAS</srai></li>
+            <li value = "* blocos "> SÃ³ um momento ... <delay>2</delay><srai>BLOCOS</srai></li>
+            <li value = "* outros"> SÃ³ um momento ... <delay>2</delay><srai>OUTROS</srai></li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>SALAS</pattern>
+    <template>As salas funcionam da seguinte maneira ....</template>
+</category>
+
+<category>
+    <pattern>BLOCOS</pattern>
+    <template>Os blocos funcionam da seguinte maneira ...</template>
+</category>
+
+<category>
+    <pattern>OUTROS</pattern>
+    <template>
+        Escolha uma das seguintes opÃ§Ãµes:<break></break><split></split>
+        BandejÃ£o;<break></break>
+        Portarias;<break></break>
+        CEFER;<break></break>
+        UBAS.<break></break>
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>Escolha uma das seguintes opÃ§Ãµes:</that>
+    <template>
+        <think><set name = "resp3"><star/></set></think>
+         <condition name="resp3">
+            <li value = "BandejÃ£o"> SÃ³ um momento ... <delay>2</delay><srai>BANDECO</srai></li>
+            <li value = "Portarias "> SÃ³ um momento ... <delay>2</delay><srai>PORTARIAS</srai></li>
+            <li value = "CEFER"> SÃ³ um momento ... <delay>2</delay><srai>CEFER</srai></li>
+            <li value = "UBAS"> SÃ³ um momento ... <delay>2</delay><srai>UBAS</srai></li>
+        </condition>
+    </template>
+</category>
+
+</aiml>
